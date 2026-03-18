@@ -15,6 +15,7 @@
 
 	import { page } from '$app/state';
 	import favicon from '$lib/assets/favicon.svg';
+	import LlmTocLink from '$lib/components/llm-toc-link.svelte';
 	import Starfield from '$lib/components/starfield.svelte';
 	import '$lib/vim';
 
@@ -38,6 +39,7 @@
 <!------------------------------------------------------------------------>
 <ModeWatcher />
 <Starfield class="absolute h-screen w-screen" />
+<LlmTocLink />
 <!------------------------------------------------------------------------>
 <!-- content                                                             -->
 <!------------------------------------------------------------------------>
