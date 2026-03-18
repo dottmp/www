@@ -13,7 +13,7 @@ export class Logger {
 
 	private log(...args: LogLog) {
 		if (!dev) return;
-		consolele.log(this.prefix, ...args);
+		console.log(this.prefix, ...args);
 	}
 
 	private error(...args: ErrorLog) {
@@ -23,7 +23,7 @@ export class Logger {
 
 	private debug(...args: DebugLog) {
 		if (!dev) return;
-		consolele.debug(this.prefix, ...args);
+		console.debug(this.prefix, ...args);
 	}
 
 	private info(...args: InfoLog) {
