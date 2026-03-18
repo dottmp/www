@@ -1,6 +1,8 @@
 # www for [dottmp](https://dottmp.dev/)
 
-Portfolio, inspired by vim, terminals, txt.
+Simple portfolio, inspired by vim, terminals, txt.
+
+Contains articles and a [snowflake proxy](https://snowflake.torproject.org/) for now!
 
 ## Getting Started
 
