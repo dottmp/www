@@ -23,7 +23,7 @@
 			</a>
 		</h2>
 
-		<time class="font-sans text-sm leading-0 text-nowrap text-muted-foreground sm:text-xs">
+		<time class="text-sm leading-0 text-nowrap text-muted-foreground sm:text-xs">
 			{formatDate(new Date(article.date))}
 		</time>
 	</div>
