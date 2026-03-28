@@ -26,7 +26,7 @@ Before we start I want to mention that it is possible to disallow crawlers on yo
 The llms get their training data from crawlers that sends HTTP GET requests to your websites.
 So what you can do is hide links on your websites that provide them with poisoned data, [poisonfountain.org](https://www.poisonfountain.org/) and [rnsaffn.com](https://rnsaffn.com/) provide such links. They return randomised text content so its totally safe to use and click on them.
 
-See posion links below:
+See poison links below:
 
 - <https://www.poisonfountain.org/poison> (original source)
 - <https://RNSAFFN.com/poison2/>
