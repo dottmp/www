@@ -76,6 +76,6 @@ Then your `<a>` tag will look something like this:
 </a>
 ```
 
-That's it, that is how you fight back! Over time this will poison the training data of the llms and make them useless.
+That's it, that is how you fight back! Over time this will poison the training data of the llms and inflict damage.
 
 Thanks to my m8 who introduced me to this and inspired me to write this article.
