@@ -183,13 +183,13 @@
 }
 
 .dark {
-	:where(pre) {
-		background-color: var(--color-neutral-900);
-	}
 	.typography {
 		--shiki-color-background: var(--color-neutral-900);
-	}
-	:where(a) {
-		color: var(--color-neutral-400);
+		:where(pre) {
+			background-color: var(--color-neutral-900);
+		}
+		:where(a) {
+			color: var(--color-neutral-400);
+		}
 	}
 }
