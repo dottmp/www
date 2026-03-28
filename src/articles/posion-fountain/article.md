@@ -10,20 +10,18 @@ thumbnail: './poison.gif'
 Don't get me wrong, I think llms (Large Language Model) can be a good tool. The problem comes when big tech take the freedom to invade and violate our
 right to privacy by taking (stealing) our data without any consent.
 
-Its no secret that these big tech AI companies scrape tons of data from the internet to train their models.
-The more data they have the better their llms perform. This is a problem because it means that they are
-taking data from our social media posts, blogs, websites, essentially anything that is available on the internet.
-This is a violation of our privacy and a form of theft.
+It is no secret that these big tech AI companies scrape tons of data from the internet to train their models.
+The more data they have the better their models perform. When they are scraping data from our social media posts, blogs, websites, essentially anything that is available on the internet without getting our consent, that is a form of theft. 
 
 ## So what can I do to fight back?
 
-Its possible fight back by giving them what they want. You give them data, data that is poisoned and useless.
+It is possible fight back by giving them what they want. You give them data, data that is poisoned and useless.
 Remember the llms are only as good as the data they are trained on.
 If they get dog water data the llm becomes...well, dog water.
 
 ## How does it work?
 
-Before we start I want to mention that it is possible to disallow crawlers to crawl your website by configuring your `robots.txt` file. Well behaved crawlers will respect that but not all of them are well behaved.
+Before we start I want to mention that it is possible to disallow crawlers on your website by configuring your `robots.txt` file. Well behaved crawlers will respect that but not all of them are well behaved.
 
 The llms get their training data from crawlers that sends HTTP GET requests to your websites.
 So what you can do is hide links on your websites that provide them with poisoned data, [poisonfountain.org](https://www.poisonfountain.org/) and [rnsaffn.com](https://rnsaffn.com/) provide such links. They return randomised text content so its totally safe to use and click on them.
