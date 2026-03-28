@@ -26,6 +26,10 @@ export class Listener extends Logger {
 	}
 
 	keydown(event: KeyboardEvent) {
+		if (event.ctrlKey || event.altKey || event.metaKey) {
+			return;
+		}
+
 		this.history.push(event.key);
 
 		this.command += this.translate(event);
