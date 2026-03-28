@@ -1,7 +1,21 @@
-import { mdsvex } from 'mdsvex';
+import { mdsvex, escapeSvelte } from 'mdsvex';
 import adapter from '@sveltejs/adapter-cloudflare';
-import { createHighlighter } from 'shiki';
+import { createCssVariablesTheme, createHighlighter } from 'shiki';
 import relativeImages from 'mdsvex-relative-images';
+
+const THEME = 'css-variable';
+
+const myTheme = createCssVariablesTheme({
+	name: THEME,
+	variablePrefix: '--shiki-',
+	variableDefaults: {},
+	fontStyle: true
+});
+
+const highlighter = await createHighlighter({
+	themes: [myTheme],
+	langs: []
+});
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,11 +28,8 @@ const config = {
 
 			highlight: {
 				highlighter: async (code, lang = 'text') => {
-					const highlighter = await createHighlighter({
-						theme: 'css-variables'
-					});
-
-					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+					await highlighter.loadLanguage(lang).catch(() => {});
+					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: THEME }));
 					return `{@html \`${html}\` }`;
 				}
 			}

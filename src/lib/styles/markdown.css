@@ -1,8 +1,9 @@
 .typography {
 	line-height: 28px;
+	color: var(--muted-foreground);
 
-	--shiki-color-text: var(--color-white);
-	--shiki-color-background: var(--color-neutral-950);
+	--shiki-text: var(--color-white);
+	--shiki-background: var(--color-neutral-900);
 	--shiki-token-constant: var(--color-neutral-300);
 	--shiki-token-string: var(--color-neutral-400);
 	--shiki-token-comment: var(--color-neutral-500);
@@ -103,8 +104,6 @@
 
 	:where(pre) {
 		display: flex;
-		background-color: var(--color-neutral-950);
-		border-radius: var(--radius-lg);
 		overflow-x: auto;
 		margin-top: --spacing(10);
 		margin-bottom: --spacing(10);
@@ -117,17 +116,17 @@
 
 	:where(pre code) {
 		flex: none;
-		padding: --spacing(8) --spacing(6);
-		font-size: var(--text-base);
+		padding: --spacing(6);
+		font-size: var(--text-sm);
 		line-height: var(--leading-loose);
-		color: var(--color-white);
 
 		@media (min-width: 640px) {
-			padding: --spacing(10);
+			padding: --spacing(8);
 		}
 	}
 
 	:where(hr) {
+		border-color: var(--color-muted);
 		margin-top: --spacing(24);
 		margin-bottom: --spacing(24);
 	}
@@ -137,11 +136,16 @@
 		text-decoration-thickness: 1px;
 		text-underline-offset: 0.15em;
 		text-decoration-skip-ink: none;
-		font-weight: var(--font-weight-semibold);
+		color: var(--color-neutral-800);
+	}
+
+	:where(a:hover) {
+		color: var(--color-foreground);
 	}
 
 	:where(p) {
-		line-height: var(--text-md--line-height);
+		line-height: var(--leading-loose);
+		font-size: var(--text-base);
 	}
 
 	:where(strong) {
@@ -179,11 +183,13 @@
 }
 
 .dark {
-	:where(pre) {
-		background-color: var(--color-neutral-900);
-	}
 	.typography {
-		color: var(--muted-foreground);
 		--shiki-color-background: var(--color-neutral-900);
+		:where(pre) {
+			background-color: var(--color-neutral-900);
+		}
+		:where(a) {
+			color: var(--color-neutral-400);
+		}
 	}
 }
