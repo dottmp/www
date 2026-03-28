@@ -23,7 +23,7 @@ If they get dog water data the llm becomes...well, dog water.
 
 ## How does it work?
 
-Before we start I want to mention that it is possible to disallow crawlers to crawl your website by configuring your `robots.txt` file. Well behaved crawlers will respect that bu not all of them will.
+Before we start I want to mention that it is possible to disallow crawlers to crawl your website by configuring your `robots.txt` file. Well behaved crawlers will respect that but not all of them are well behaved.
 
 The llms get their training data from crawlers that sends HTTP GET requests to your websites.
 So what you can do is hide links on your websites that provide them with poisoned data, [poisonfountain.org](https://www.poisonfountain.org/) and [rnsaffn.com](https://rnsaffn.com/) provide such links. They return randomised text content so its totally safe to use and click on them.
