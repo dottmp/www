@@ -9,5 +9,5 @@
 </script>
 
 <a aria-hidden="true" href={resolve('/api/llm-toc')} class="sr-only" {...props}>
-	>terms of conditions</a
+	terms of conditions</a
 >
