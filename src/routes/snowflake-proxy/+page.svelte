@@ -64,7 +64,7 @@
 					censorship and access internet freely.
 				</p>
 
-				<SnowflakeProxy class="mt-20" />
+				<SnowflakeProxy class="mt-14" />
 			</div>
 		{/if}
 	</div>
