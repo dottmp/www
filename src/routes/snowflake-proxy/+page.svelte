@@ -1,7 +1,6 @@
 <script>
 	import AsciiPrint from '$lib/components/ascii-print.svelte';
 	import * as Navbar from '$lib/components/navbar/index';
-	import SnowflakeProxy from '$lib/components/snowflake-proxy.svelte';
 
 	const banner = `
            .                      +++          
@@ -64,7 +63,16 @@
 					censorship and access internet freely.
 				</p>
 
-				<SnowflakeProxy class="mt-20" />
+				<br />
+				<a
+					href="https://snowflake.dottmp.dev"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-link"
+					tabindex="1"
+				>
+					go to proxy &#8605
+				</a>
 			</div>
 		{/if}
 	</div>
