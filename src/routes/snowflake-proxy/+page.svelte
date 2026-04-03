@@ -41,7 +41,7 @@
 <Navbar.Main />
 
 <main class="container max-w-3xl py-28 md:m-auto">
-	<div class="gap-x-10 md:flex md:flex-row">
+	<div class="gap-x-14 md:flex md:flex-row">
 		<header>
 			<AsciiPrint
 				class="md:h-109"
