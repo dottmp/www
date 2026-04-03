@@ -12,19 +12,17 @@
 </script>
 
 <div class={cn('relative size-fit ', classname)} {...props}>
-	<div class="">
-		<iframe
-			title="Snowflake proxy"
-			aria-readonly={true}
-			src="https://snowflake.torproject.org/embed.html"
-			width="320"
-			height="260"
-			class={cn(
-				'border-0 outline-none',
-				mode.current === 'dark' && isFirefox
-					? 'filter-[invert(1)_hue-rotate(180deg)_brightness(0.8)_contrast(0.92)]'
-					: 'filter-[brightness(0.6)_contrast(1.1)_saturate(0.8)_hue-rotate(180deg)]'
-			)}
-		></iframe>
-	</div>
+	<iframe
+		title="Snowflake proxy"
+		aria-readonly={true}
+		src="https://snowflake.torproject.org/embed.html"
+		width="320"
+		height="260"
+		class={cn(
+			'border-0 outline-none',
+			mode.current === 'dark' && isFirefox
+				? 'filter-[invert(1)_hue-rotate(180deg)_brightness(0.8)_contrast(0.92)]'
+				: 'filter-[brightness(0.6)_contrast(1.1)_saturate(0.8)_hue-rotate(180deg)]'
+		)}
+	></iframe>
 </div>
