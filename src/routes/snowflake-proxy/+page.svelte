@@ -59,18 +59,15 @@
 				</h1>
 				<br />
 				<p class="max-w-lg text-muted-foreground md:max-w-none">
-					Enable snowflake proxy and leave it on to donate bandwith and help tor users bypass
-					censorship and access internet freely.
+					<a class="btn btn-link" href="https://snowflake.torproject.org/">Snowflake </a> is a tool
+					made by the
+					<a class="btn btn-link" href="https://www.torproject.org/">Tor project</a>. By keeping a
+					snowflake proxy running in the background you will help tor users bypass censhorship and
+					access the internet freely.
 				</p>
 
 				<br />
-				<a
-					href="https://snowflake.dottmp.dev"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-link"
-					tabindex="1"
-				>
+				<a href="https://snowflake.dottmp.dev" class="btn btn-link" tabindex="1">
 					go to proxy &#8605
 				</a>
 			</div>
