@@ -24,7 +24,7 @@
 		</h2>
 
 		<time
-			class="text-sm leading-0 text-nowrap text-muted-foreground transition group-hover:text-foreground sm:text-xs"
+			class="text-sm leading-0 text-nowrap text-muted-foreground transition group-focus-within:text-foreground group-hover:text-foreground sm:text-xs"
 		>
 			{formatDate(new Date(article.date))}
 		</time>
