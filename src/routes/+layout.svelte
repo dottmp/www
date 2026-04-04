@@ -38,7 +38,7 @@
 <!-- global                                                             -->
 <!------------------------------------------------------------------------>
 <ModeWatcher defaultMode="dark" />
-<Starfield class="absolute h-screen w-screen" />
+<Starfield class="fixed h-screen w-screen" />
 <LlmTocLink />
 <!------------------------------------------------------------------------>
 <!-- content                                                             -->
