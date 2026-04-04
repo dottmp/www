@@ -1,7 +1,7 @@
-import { ALLOWED_ORIGINS } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export function getAllowedOrigin(request: Request): string | null | false {
-	const allowedOrigins = ALLOWED_ORIGINS?.split(',').map((origin) => origin.trim()) ?? [];
+	const allowedOrigins = env.ALLOWED_ORIGINS?.split(',').map((origin) => origin.trim()) ?? [];
 
 	const origin = request.headers.get('origin');
 
