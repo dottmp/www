@@ -5,7 +5,7 @@ import type { LayoutLoad } from './$types';
 import { getSlug } from '$lib/utils/slug';
 import { tryCatch } from '$lib/utils/try-catch';
 
-export const load: LayoutLoad = async ({ params }) => {
+export const load: LayoutLoad = async ({ params, url }) => {
 	const modules = import.meta.glob<App.MdsvexFile>(`/src/articles/**/*.{md,svx,svelte.md}`);
 
 	const [, resolver] =
@@ -26,7 +26,8 @@ export const load: LayoutLoad = async ({ params }) => {
 		frontmatter: article.metadata,
 		meta: {
 			title: article.metadata.title,
-			description: article.metadata.description
+			description: article.metadata.description,
+			url: url.href
 		}
 	};
 };
