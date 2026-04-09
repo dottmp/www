@@ -120,6 +120,6 @@
 	<AsciiPrint class="block h-159  w-85.5 sm:hidden" text={bannerSM} chunkSize={24} />
 
 	<h1 class="sr-only">
-		swedish developer sorry to dissapoint you im just a regular guy that nerds over fonts and colors
+		Welcome to dottmp. A personal portfolio of a Swedish developer who nerds over fonts and colors.
 	</h1>
 </main>
