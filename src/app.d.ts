@@ -22,6 +22,15 @@ declare global {
 		type Article = Meta & {
 			slug: string | null;
 		};
+
+		interface PageData {
+			meta?: {
+				title?: string;
+				description?: string;
+				url?: string;
+				image?: string;
+			};
+		}
 	}
 }
 
