@@ -34,7 +34,7 @@ export const load: PageServerLoad = async () => {
 	return {
 		articles: maxArticles,
 		meta: {
-			title: 'dottmp | articles',
+			title: 'articles | dottmp',
 			description: 'Writing on development and stuff.'
 		}
 	};
