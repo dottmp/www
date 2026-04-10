@@ -25,7 +25,7 @@ export const load: LayoutLoad = async ({ params, url }) => {
 		component: article.default,
 		frontmatter: article.metadata,
 		meta: {
-			title: article.metadata.title,
+			title: `${article.metadata.title} | dottmp`,
 			description: article.metadata.description,
 			url: url.href
 		}
