@@ -11,8 +11,8 @@
 </script>
 
 <Navbar class={cn(classname)} {...props}>
-	<div class="grid w-full grid-cols-1 grid-rows-2 gap-6 sm:grid-cols-2 sm:grid-rows-1">
-		<div class="flex gap-x-6 sm:gap-x-4">
+	<div class="flex w-full flex-col gap-6 md:flex-row">
+		<div class="flex gap-x-4 md:gap-x-6">
 			<a class="btn btn-text" href={resolve('/')}>x: home</a>
 
 			<ModeToggle />
@@ -20,8 +20,9 @@
 			<Help />
 		</div>
 
-		<div class="row-start-2 flex gap-x-6 sm:col-start-2 sm:row-start-1 sm:ml-auto sm:gap-x-4">
+		<div class="flex flex-wrap gap-x-4 gap-y-6 md:ml-auto md:gap-x-6">
 			<a class="btn btn-link" href={resolve('/articles')}>a: articles</a>
+			<a class="btn btn-link" href={resolve('/projects')}>p: projects</a>
 			<a class="btn btn-link" href={resolve('/snowflake-proxy')}>s: snowflake proxy</a>
 			<a
 				class="btn btn-link"
