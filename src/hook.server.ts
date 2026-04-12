@@ -6,7 +6,7 @@ import { dev } from '$app/environment';
 const handleHeaders: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
 
-	response.headers.set('Cache-Control', 'public, max-age=1800');
+	response.headers.set('Cache-Control', 'public, max-age=3600');
 
 	response.headers.set('X-Frame-Options', 'DENY');
 
