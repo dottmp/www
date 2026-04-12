@@ -6,6 +6,8 @@ import { dev } from '$app/environment';
 const handleHeaders: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
 
+	response.headers.set('Cache-Control', 'public, max-age=1800');
+
 	response.headers.set('X-Frame-Options', 'DENY');
 
 	response.headers.set('X-Content-Type-Options', 'nosniff');
@@ -19,22 +21,6 @@ const handleHeaders: Handle = async ({ event, resolve }) => {
 	response.headers.set(
 		'Permissions-Policy',
 		'camera=(), microphone=(), geolocation=(), payment=()'
-	);
-
-	response.headers.set(
-		'Content-Security-Policy',
-		[
-			"default-src 'self'",
-			"script-src 'self' 'unsafe-inline'",
-			"style-src 'self' 'unsafe-inline'",
-			"font-src 'self'",
-			"img-src 'self' data: https:",
-			"connect-src 'self'",
-			"object-src 'none'",
-			"base-uri 'self'",
-			"form-action 'self'",
-			"frame-ancestors 'none'"
-		].join('; ')
 	);
 
 	return response;
