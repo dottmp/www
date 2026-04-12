@@ -6,7 +6,9 @@ import { getSlug } from '$lib/utils/slug';
 import { tryCatch } from '$lib/utils/try-catch';
 
 export const load: LayoutLoad = async ({ params, url }) => {
-	const modules = import.meta.glob<App.MdsvexFile>(`/src/articles/**/*.{md,svx,svelte.md}`);
+	const modules = import.meta.glob<App.MdsvexFile>(
+		`/src/lib/data/articles/**/*.{md,svx,svelte.md}`
+	);
 
 	const [, resolver] =
 		Object.entries(modules).find(([path]) => getSlug(path) === params.slug) ?? [];

@@ -10,13 +10,13 @@
 	let { class: classname, src: source, slug, ...props }: ThumbnailProps = $props();
 
 	const imageModules = import.meta.glob<{ default: string }>(
-		'/src/articles/**/*.{png,jpg,jpeg,gif,webp,avif,svg}',
+		'/src/lib/data/articles/**/*.{png,jpg,jpeg,gif,webp,avif,svg}',
 		{ eager: true, query: '?url' }
 	);
 
 	let src = $derived(
 		source?.startsWith('./')
-			? (imageModules[`/src/articles/${slug}/${source.slice(2)}`]?.default ?? source)
+			? (imageModules[`/src/lib/data/articles/${slug}/${source.slice(2)}`]?.default ?? source)
 			: source
 	);
 </script>

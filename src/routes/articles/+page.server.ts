@@ -8,7 +8,9 @@ import { tryCatch } from '$lib/utils/try-catch';
 const MAX_ARTICLES_AMOUNT = 10;
 
 export const load: PageServerLoad = async () => {
-	const modules = import.meta.glob<App.MdsvexFile>(`/src/articles/**/*.{md,svx,svelte.md}`);
+	const modules = import.meta.glob<App.MdsvexFile>(
+		`/src/lib/data/articles/**/*.{md,svx,svelte.md}`
+	);
 
 	const articlePromises: Promise<App.Article>[] = Object.entries(modules).map(
 		async ([path, resolver]) => {
