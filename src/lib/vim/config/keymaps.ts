@@ -28,6 +28,15 @@ vim.keymap.set(
 
 vim.keymap.set(
 	'n',
+	'p',
+	function () {
+		goto(resolve('/projects'));
+	},
+	{ name: 'projects', desc: 'Go to projects page' }
+);
+
+vim.keymap.set(
+	'n',
 	's',
 	function () {
 		goto(resolve('/snowflake-proxy'));
